@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LinAlgOps.dir/main.cpp.o"
+  "CMakeFiles/LinAlgOps.dir/Matrix.cpp.o"
   "LinAlgOps.pdb"
   "LinAlgOps"
 )

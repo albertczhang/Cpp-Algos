@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/LinAlgOps.dir/main.cpp.o  -o LinAlgOps 
+/usr/bin/c++  -g   CMakeFiles/LinAlgOps.dir/main.cpp.o CMakeFiles/LinAlgOps.dir/Matrix.cpp.o  -o LinAlgOps 

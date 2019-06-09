@@ -1,4 +1,4 @@
-# Install script for directory: /home/albertczhang/Desktop/Projects/LinAlgOps
+# Install script for directory: /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

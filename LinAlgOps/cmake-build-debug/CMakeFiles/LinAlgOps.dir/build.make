@@ -43,10 +43,10 @@ RM = /home/albertczhang/clion-2019.1.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/albertczhang/Desktop/Projects/LinAlgOps
+CMAKE_SOURCE_DIR = /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug
+CMAKE_BINARY_DIR = /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LinAlgOps.dir/depend.make
@@ -59,28 +59,43 @@ include CMakeFiles/LinAlgOps.dir/flags.make
 
 CMakeFiles/LinAlgOps.dir/main.cpp.o: CMakeFiles/LinAlgOps.dir/flags.make
 CMakeFiles/LinAlgOps.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LinAlgOps.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinAlgOps.dir/main.cpp.o -c /home/albertczhang/Desktop/Projects/LinAlgOps/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LinAlgOps.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinAlgOps.dir/main.cpp.o -c /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/main.cpp
 
 CMakeFiles/LinAlgOps.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinAlgOps.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/albertczhang/Desktop/Projects/LinAlgOps/main.cpp > CMakeFiles/LinAlgOps.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/main.cpp > CMakeFiles/LinAlgOps.dir/main.cpp.i
 
 CMakeFiles/LinAlgOps.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinAlgOps.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/albertczhang/Desktop/Projects/LinAlgOps/main.cpp -o CMakeFiles/LinAlgOps.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/main.cpp -o CMakeFiles/LinAlgOps.dir/main.cpp.s
+
+CMakeFiles/LinAlgOps.dir/Matrix.cpp.o: CMakeFiles/LinAlgOps.dir/flags.make
+CMakeFiles/LinAlgOps.dir/Matrix.cpp.o: ../Matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LinAlgOps.dir/Matrix.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LinAlgOps.dir/Matrix.cpp.o -c /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/Matrix.cpp
+
+CMakeFiles/LinAlgOps.dir/Matrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LinAlgOps.dir/Matrix.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/Matrix.cpp > CMakeFiles/LinAlgOps.dir/Matrix.cpp.i
+
+CMakeFiles/LinAlgOps.dir/Matrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LinAlgOps.dir/Matrix.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/Matrix.cpp -o CMakeFiles/LinAlgOps.dir/Matrix.cpp.s
 
 # Object files for target LinAlgOps
 LinAlgOps_OBJECTS = \
-"CMakeFiles/LinAlgOps.dir/main.cpp.o"
+"CMakeFiles/LinAlgOps.dir/main.cpp.o" \
+"CMakeFiles/LinAlgOps.dir/Matrix.cpp.o"
 
 # External object files for target LinAlgOps
 LinAlgOps_EXTERNAL_OBJECTS =
 
 LinAlgOps: CMakeFiles/LinAlgOps.dir/main.cpp.o
+LinAlgOps: CMakeFiles/LinAlgOps.dir/Matrix.cpp.o
 LinAlgOps: CMakeFiles/LinAlgOps.dir/build.make
 LinAlgOps: CMakeFiles/LinAlgOps.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable LinAlgOps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LinAlgOps"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LinAlgOps.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -93,6 +108,6 @@ CMakeFiles/LinAlgOps.dir/clean:
 .PHONY : CMakeFiles/LinAlgOps.dir/clean
 
 CMakeFiles/LinAlgOps.dir/depend:
-	cd /home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertczhang/Desktop/Projects/LinAlgOps /home/albertczhang/Desktop/Projects/LinAlgOps /home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug /home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug /home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/LinAlgOps.dir/depend
 

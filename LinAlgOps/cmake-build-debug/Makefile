@@ -48,10 +48,10 @@ RM = /home/albertczhang/clion-2019.1.3/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/albertczhang/Desktop/Projects/LinAlgOps
+CMAKE_SOURCE_DIR = /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug
+CMAKE_BINARY_DIR = /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug/CMakeFiles /home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug/CMakeFiles /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/albertczhang/Desktop/Projects/LinAlgOps/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ LinAlgOps/fast:
 	$(MAKE) -f CMakeFiles/LinAlgOps.dir/build.make CMakeFiles/LinAlgOps.dir/build
 .PHONY : LinAlgOps/fast
 
+Matrix.o: Matrix.cpp.o
+
+.PHONY : Matrix.o
+
+# target to build an object file
+Matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/LinAlgOps.dir/build.make CMakeFiles/LinAlgOps.dir/Matrix.cpp.o
+.PHONY : Matrix.cpp.o
+
+Matrix.i: Matrix.cpp.i
+
+.PHONY : Matrix.i
+
+# target to preprocess a source file
+Matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/LinAlgOps.dir/build.make CMakeFiles/LinAlgOps.dir/Matrix.cpp.i
+.PHONY : Matrix.cpp.i
+
+Matrix.s: Matrix.cpp.s
+
+.PHONY : Matrix.s
+
+# target to generate assembly for a file
+Matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/LinAlgOps.dir/build.make CMakeFiles/LinAlgOps.dir/Matrix.cpp.s
+.PHONY : Matrix.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... LinAlgOps"
 	@echo "... edit_cache"
+	@echo "... Matrix.o"
+	@echo "... Matrix.i"
+	@echo "... Matrix.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
