@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/Complex.cpp">
+			<Option target="LinAlgOps"/>
+		</Unit>
+		<Unit filename="/home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/Complex.h">
+			<Option target="LinAlgOps"/>
+		</Unit>
 		<Unit filename="/home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/Matrix.cpp">
 			<Option target="LinAlgOps"/>
 		</Unit>

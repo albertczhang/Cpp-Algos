@@ -3,4 +3,4 @@ project(LinAlgOps)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(LinAlgOps main.cpp Matrix.cpp Matrix.h)
+add_executable(LinAlgOps main.cpp Matrix.cpp Matrix.h Complex.cpp Complex.h)
