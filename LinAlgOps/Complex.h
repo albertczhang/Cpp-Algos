@@ -1,5 +1,5 @@
 //
-// Created by albertczhang on 6/9/19.
+// Template Declarations for Complex int and Complex Double
 //
 
 #ifndef LINALGOPS_COMPLEX_H

@@ -1,5 +1,5 @@
 //
-// Created by albertczhang on 6/9/19.
+// Declarations for Matrix Class
 //
 
 #ifndef LINALGOPS_MATRIX_H
