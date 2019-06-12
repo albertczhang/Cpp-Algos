@@ -32,6 +32,10 @@ public:
 
     Complex<T> operator/(Complex<T>);
 
+    bool operator==(Complex<T>);
+
+    bool operator!=(Complex<T>);
+
     void set(T A, T B);
 
     void conj();
@@ -68,8 +72,10 @@ std::ostream &operator<<(std::ostream &os, Complex<T> z) {
 //    }
 }
 
+
 typedef Complex<int> iint;
 typedef Complex<double> idouble;
+typedef Complex<float> ifloat;
 
 
 #endif //LINALGOPS_COMPLEX_H

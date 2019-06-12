@@ -40,12 +40,16 @@ Matrix<T>::Matrix(int M, int N) {
 
 template<class T>
 void Matrix<T>::set(int i, int j, T x) {
+    i--;
+    j--;
     mat[i][j] = (T) x;
 }
 
 
 template<class T>
 T Matrix<T>::get(int i, int j) const {
+    i--;
+    j--;
     if (i >= m || j >= n) {
         cout << "Matrix indices out of bounds, exiting...";
         exit(0);
@@ -99,7 +103,7 @@ Matrix<T> Matrix<T>::operator+(Matrix<T> other) {
     Matrix<T> result(m, n);
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-            result.set(i, j, mat[i][j] + other.get(i, j));
+            result.set(i + 1, j + 1, mat[i][j] + other.get(i, j));
         }
     }
     return result;
@@ -114,7 +118,7 @@ Matrix<T> Matrix<T>::operator-(Matrix<T> other) {
     Matrix<T> result(m, n);
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-            result.set(i, j, mat[i][j] - other.get(i, j));
+            result.set(i + 1, j + 1, mat[i][j] - other.get(i, j));
         }
     }
     return result;
@@ -135,24 +139,45 @@ Matrix<T> Matrix<T>::operator*(Matrix<T> other) {
             for (int k = 0; k < n; k++) {
                 dot = dot + mat[i][k] * other.get(k, j);
             }
-            result.set(i, j, dot);
+            result.set(i + 1, j + 1, dot);
         }
     }
     return result;
 }
 
 
-/*
- * MATRIX OPERATIONS
- */
+template<class T>
+bool Matrix<T>::operator==(Matrix<T> other) {
+    if (m != other.m || n != other.n) {
+        return false;
+    } else {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (mat[i][j] != other.get(i + 1, j + 1))
+                    return false;
+            }
+        }
+        return true;
+    }
+}
+
+template<class T>
+bool Matrix<T>::operator!=(Matrix<T> other) {
+    return !((*this) == other);
+}
+
+
+/***************************************************
+ **************** MATRIX OPERATIONS ****************
+ ***************************************************/
 
 template<class T>
 Matrix<T> Matrix<T>::getT() const {
     /* RETURNS THE TRANSPOSE */
-    Matrix<T> transpose (n, m);
+    Matrix<T> transpose(n, m);
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-            transpose.set(j, i, mat[i][j]);
+            transpose.set(j + 1, i + 1, mat[i][j]);
         }
     }
     return transpose;
@@ -160,30 +185,103 @@ Matrix<T> Matrix<T>::getT() const {
 
 template<>
 Matrix<idouble> Matrix<idouble>::getH() const {
-    /* RETURNS THE HERMITIAN TRANSPOSE (ONLY FOR COMPLEX MATRICIES) */
-    Matrix<idouble> H (n, m);
+    /* RETURNS THE HERMITIAN TRANSPOSE (ONLY FOR COMPLEX MATRICES) */
+    Matrix<idouble> H(n, m);
     H = (*this).getT();
     for (int i = 0; i < H.m; i++) {
         for (int j = 0; j < H.n; j++) {
-            H.set(i, j, H.get(i, j).getConj());
+            H.set(i + 1, j + 1, H.get(i + 1, j + 1).getConj());
         }
     }
     return H;
 }
 
 template<>
-Matrix<iint> Matrix<iint>::getH() const {
-    /* RETURNS THE HERMITIAN TRANSPOSE (ONLY FOR COMPLEX MATRICIES) */
-    Matrix<iint> H (n, m);
+Matrix<ifloat> Matrix<ifloat>::getH() const {
+    /* RETURNS THE HERMITIAN TRANSPOSE (ONLY FOR COMPLEX MATRICES) */
+    Matrix<ifloat> H(n, m);
     H = (*this).getT();
     for (int i = 0; i < H.m; i++) {
         for (int j = 0; j < H.n; j++) {
-            H.set(i, j, H.get(i, j).getConj());
+            H.set(i + 1, j + 1, H.get(i + 1, j + 1).getConj());
         }
     }
     return H;
 }
 
+
+template<>
+Matrix<iint> Matrix<iint>::getH() const {
+    /* RETURNS THE HERMITIAN TRANSPOSE (ONLY FOR COMPLEX MATRICES) */
+    Matrix<iint> H(n, m);
+    H = (*this).getT();
+    for (int i = 0; i < H.m; i++) {
+        for (int j = 0; j < H.n; j++) {
+            H.set(i + 1, j + 1, H.get(i + 1, j + 1).getConj());
+        }
+    }
+    return H;
+}
+
+
+int fact(int n) {
+    if (n == 0) return 1;
+    return n * fact(n - 1);
+}
+
+template<int n>
+struct permutations {
+    int P[fact(n)][n + 1] = {};
+};
+
+template<int n>
+permutations<n> genPermutations() {
+    permutations<n> perms;
+    if (n == 1) {
+        perms.P[0][1] = 1;
+        return perms;
+    }
+    permutations<n - 1> prevPerms = genPermutations<n - 1>();
+    int prevf = fact(n - 1);
+    for (int i = 0; i < n; i++) {
+        for (int x = 0; x < prevf; x++) {
+            int index = i * prevf + x;
+            perms.P[index][1] = i + 1;
+            for (int j = 2; j <= n; j++) {
+                int temp = prevPerms.P[x][j - 1];
+                if (temp == 1) {
+                    perms.P[index][j] = n;
+                    continue;
+                }
+                perms.P[index][j] = temp;
+            }
+        }
+    }
+    return perms;
+}
+
+
+template<class T>
+T Matrix<T>::det(int algo) const {
+    /* RETURNS DETERMINANT OF MATRIX IF M=N */
+    if (m != n) {
+        cout << "Not a square matrix, operation invalid, exiting...";
+        exit(0);
+    }
+    /* TODO : implement determinant function */
+    /* 0: efficient computation of determinant
+     * 1: naive (inefficient) algorithm
+     * */
+    switch (algo) {
+        case 0:
+
+            break;
+        case 1:
+
+            break;
+
+    }
+}
 
 
 template
@@ -197,6 +295,9 @@ class Matrix<double>;
 
 template
 class Matrix<Complex<int>>;
+
+template
+class Matrix<Complex<float>>;
 
 template
 class Matrix<Complex<double>>;

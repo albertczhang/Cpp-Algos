@@ -58,6 +58,16 @@ Complex<T> Complex<T>::operator/(const Complex<T> z) {
     return result;
 }
 
+template<class T>
+bool Complex<T>::operator==(const Complex<T> z) {
+    return ((a == z.a) && (b == z.b));
+}
+
+template<class T>
+bool Complex<T>::operator!=(const Complex<T> z) {
+    return !((a == z.a) && (b == z.b));
+}
+
 
 template<class T>
 void Complex<T>::set(T A, T B) {

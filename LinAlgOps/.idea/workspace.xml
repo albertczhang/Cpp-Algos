@@ -12,26 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58df4651-036b-4c7a-94b2-688bdf0234f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Complex.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Complex.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Complex.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Complex.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Complex.h" beforeDir="false" afterPath="$PROJECT_DIR$/Complex.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Matrix.h" beforeDir="false" afterPath="$PROJECT_DIR$/Matrix.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/Complex.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/Complex.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/Matrix.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/Matrix.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/LinAlgOps.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LinAlgOps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LinAlgOps.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LinAlgOps.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/LinAlgOps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/LinAlgOps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -47,11 +38,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="525">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="25" column="15" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="15" />
+            <state relative-caret-position="825">
+              <caret line="48" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="48" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -59,26 +50,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Matrix.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1025">
-              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+            <state relative-caret-position="770">
+              <caret line="233" column="27" selection-start-line="233" selection-start-column="27" selection-end-line="233" selection-end-column="27" />
               <folding>
                 <element signature="e#45#64#0" expanded="true" />
-                <element signature="e#94#103#0" expanded="true" />
-                <element signature="e#95#104#0" expanded="true" />
-                <element signature="e#156#165#0" expanded="true" />
-                <element signature="e#137#146#0" expanded="true" />
-                <element signature="e#370#379#0" expanded="true" />
-                <element signature="e#926#935#0" expanded="true" />
-                <element signature="e#938#947#0" expanded="true" />
-                <element signature="e#1767#1776#0" expanded="true" />
-                <element signature="e#2153#2162#0" expanded="true" />
-                <element signature="e#2153#2162#0" expanded="true" />
-                <element signature="e#3217#3226#0" expanded="true" />
-                <element signature="e#3492#3494#0" expanded="true" />
-                <element signature="e#3492#3494#0" expanded="true" />
+                <element signature="e#5290#5297#0" expanded="true" />
+                <element signature="e#5364#5371#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,11 +67,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Matrix.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="425">
+              <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
               <folding>
                 <element signature="e#100#120#0" expanded="true" />
                 <element signature="e#170#179#0" expanded="true" />
+                <element signature="e#800#809#0" expanded="true" />
+                <element signature="e#1077#1086#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Complex.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+            <state relative-caret-position="2375">
+              <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
               <folding>
                 <element signature="e#46#66#0" expanded="true" />
                 <element signature="e#114#123#0" expanded="true" />
@@ -111,6 +93,8 @@
                 <element signature="e#492#501#0" expanded="true" />
                 <element signature="e#632#641#0" expanded="true" />
                 <element signature="e#846#855#0" expanded="true" />
+                <element signature="e#1122#1131#0" expanded="true" />
+                <element signature="e#1232#1241#0" expanded="true" />
                 <element signature="e#988#997#0" expanded="true" />
                 <element signature="e#1194#1203#0" expanded="true" />
                 <element signature="e#1276#1285#0" expanded="true" />
@@ -122,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Complex.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            <state relative-caret-position="1825">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="e#102#119#0" expanded="true" />
                 <element signature="e#129#138#0" expanded="true" />
@@ -143,8 +127,8 @@
       <list>
         <option value="$PROJECT_DIR$/Number.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/Complex.h" />
         <option value="$PROJECT_DIR$/Complex.cpp" />
+        <option value="$PROJECT_DIR$/Complex.h" />
         <option value="$PROJECT_DIR$/Matrix.h" />
         <option value="$PROJECT_DIR$/Matrix.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
@@ -193,7 +177,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -227,12 +211,13 @@
       <workItem from="1560086579354" duration="73000" />
       <workItem from="1560086780353" duration="117000" />
       <workItem from="1560087628203" duration="38000" />
-      <workItem from="1560088591376" duration="31557000" />
+      <workItem from="1560088591376" duration="42279000" />
+      <workItem from="1560310328810" duration="108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31785000" />
+    <option name="totallyTimeSpent" value="42615000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -247,7 +232,7 @@
     <frame x="0" y="58" width="2560" height="1382" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15561843" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15804365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -265,35 +250,24 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Messages" order="4" weight="0.32983023" />
-      <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.40703315" />
+      <window_info active="true" anchor="right" id="Messages" order="4" visible="true" weight="0.44219887" />
+      <window_info anchor="right" id="Run" order="5" weight="0.35327405" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/LinAlgOps" />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.cpp" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Matrix.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Matrix.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Number.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Number.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Matrix.h" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Matrix.cpp" />
+    <entry file="file://$PROJECT_DIR$/Number.h" />
+    <entry file="file://$PROJECT_DIR$/Number.cpp" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/Makefile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -309,33 +283,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Complex.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-          <folding>
-            <element signature="e#102#119#0" expanded="true" />
-            <element signature="e#129#138#0" expanded="true" />
-            <element signature="e#624#633#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Matrix.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="425">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
           <folding>
             <element signature="e#100#120#0" expanded="true" />
             <element signature="e#170#179#0" expanded="true" />
+            <element signature="e#800#809#0" expanded="true" />
+            <element signature="e#1077#1086#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Complex.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="75" column="13" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
+        <state relative-caret-position="2375">
+          <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
           <folding>
             <element signature="e#46#66#0" expanded="true" />
             <element signature="e#114#123#0" expanded="true" />
@@ -345,6 +309,8 @@
             <element signature="e#492#501#0" expanded="true" />
             <element signature="e#632#641#0" expanded="true" />
             <element signature="e#846#855#0" expanded="true" />
+            <element signature="e#1122#1131#0" expanded="true" />
+            <element signature="e#1232#1241#0" expanded="true" />
             <element signature="e#988#997#0" expanded="true" />
             <element signature="e#1194#1203#0" expanded="true" />
             <element signature="e#1276#1285#0" expanded="true" />
@@ -352,35 +318,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/Complex.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="15" />
+        <state relative-caret-position="1825">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#102#119#0" expanded="true" />
+            <element signature="e#129#138#0" expanded="true" />
+            <element signature="e#624#633#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Matrix.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        <state relative-caret-position="770">
+          <caret line="233" column="27" selection-start-line="233" selection-start-column="27" selection-end-line="233" selection-end-column="27" />
           <folding>
             <element signature="e#45#64#0" expanded="true" />
-            <element signature="e#94#103#0" expanded="true" />
-            <element signature="e#95#104#0" expanded="true" />
-            <element signature="e#156#165#0" expanded="true" />
-            <element signature="e#137#146#0" expanded="true" />
-            <element signature="e#370#379#0" expanded="true" />
-            <element signature="e#926#935#0" expanded="true" />
-            <element signature="e#938#947#0" expanded="true" />
-            <element signature="e#1767#1776#0" expanded="true" />
-            <element signature="e#2153#2162#0" expanded="true" />
-            <element signature="e#2153#2162#0" expanded="true" />
-            <element signature="e#3217#3226#0" expanded="true" />
-            <element signature="e#3492#3494#0" expanded="true" />
-            <element signature="e#3492#3494#0" expanded="true" />
+            <element signature="e#5290#5297#0" expanded="true" />
+            <element signature="e#5364#5371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="48" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
