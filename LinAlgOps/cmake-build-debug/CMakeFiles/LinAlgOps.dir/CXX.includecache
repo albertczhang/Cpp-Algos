@@ -14,14 +14,6 @@ ostream
 iomanip
 -
 
-/home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/Matrix.cpp
-iostream
--
-iomanip
--
-Matrix.h
-/home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/Matrix.h
-
 /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/Matrix.h
 Complex.h
 /home/albertczhang/Desktop/Projects/Cpp-Algos/LinAlgOps/Complex.h
