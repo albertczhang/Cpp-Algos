@@ -224,41 +224,41 @@ Matrix<iint> Matrix<iint>::getH() const {
 }
 
 
-int fact(int n) {
-    if (n == 0) return 1;
-    return n * fact(n - 1);
-}
-
-template<int n>
-struct permutations {
-    int P[fact(n)][n + 1] = {};
-};
-
-template<int n>
-permutations<n> genPermutations() {
-    permutations<n> perms;
-    if (n == 1) {
-        perms.P[0][1] = 1;
-        return perms;
-    }
-    permutations<n - 1> prevPerms = genPermutations<n - 1>();
-    int prevf = fact(n - 1);
-    for (int i = 0; i < n; i++) {
-        for (int x = 0; x < prevf; x++) {
-            int index = i * prevf + x;
-            perms.P[index][1] = i + 1;
-            for (int j = 2; j <= n; j++) {
-                int temp = prevPerms.P[x][j - 1];
-                if (temp == 1) {
-                    perms.P[index][j] = n;
-                    continue;
-                }
-                perms.P[index][j] = temp;
-            }
-        }
-    }
-    return perms;
-}
+//int fact(int n) {
+//    if (n == 0) return 1;
+//    return n * fact(n - 1);
+//}
+//
+//template<int n>
+//struct permutations {
+//    int P[fact(n)][n + 1] = {};
+//};
+//
+//template<int n>
+//permutations<n> genPermutations() {
+//    permutations<n> perms;
+//    if (n == 1) {
+//        perms.P[0][1] = 1;
+//        return perms;
+//    }
+//    permutations<n - 1> prevPerms = genPermutations<n - 1>();
+//    int prevf = fact(n - 1);
+//    for (int i = 0; i < n; i++) {
+//        for (int x = 0; x < prevf; x++) {
+//            int index = i * prevf + x;
+//            perms.P[index][1] = i + 1;
+//            for (int j = 2; j <= n; j++) {
+//                int temp = prevPerms.P[x][j - 1];
+//                if (temp == 1) {
+//                    perms.P[index][j] = n;
+//                    continue;
+//                }
+//                perms.P[index][j] = temp;
+//            }
+//        }
+//    }
+//    return perms;
+//}
 
 
 template<class T>
@@ -277,9 +277,25 @@ T Matrix<T>::det(int algo) const {
 
             break;
         case 1:
-
-            break;
-
+            if (m == 1 && n == 1) {
+                return get(1, 1);
+            }
+            T result = 0;
+            for (int j = 1, f = 1; j <= n; j++, f *= -1) {
+                Matrix<T> minor (m - 1, n - 1);
+                for (int i = 2; i <= m; i++) {
+                    for (int k = 1; k < j; k++) {
+                        minor.set(i - 1, k, get(i, k));
+                    }
+                    for (int k = j + 1; k <= n; k++) {
+                        minor.set(i - 1, k - 1, get(i, k));
+                    }
+                }
+                T factor (f);
+                result = result + factor * get(1, j) * minor.det(1);
+//                cout << j << " " << factor << " " << get(1, j) << " " << minor.det(1) << endl;
+            }
+            return result;
     }
 }
 

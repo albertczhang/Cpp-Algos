@@ -22,30 +22,18 @@ int main() {
 //        cout << zarr[i] << endl;
 //    }
 
-    Matrix<iint> m1(5, 5);
-    for (int i = 1; i <= m1.m; i++) {
-        for (int j = 1; j <= m1.n; j++) {
-            iint z(i, j);
-            m1.set(i, j, z);
+    int n = 6;
+    Matrix<double> m1(n, n);
+    for (int i = 1; i <= n; i++) {
+        for (int j = i + 1; j <= n; j++) {
+            m1.set(i, j, i);
+            m1.set(j, i, -i);
         }
     }
-    Matrix<iint> m2(5, 5);
-    for (int i = 1; i <= m2.m; i++) {
-        for (int j = 1; j <= m2.n; j++) {
-            iint z(i, j);
-            m2.set(i, j, z);
-        }
-    }
-    cout << setprecision(3);
-    cout << (m1 != m2) << endl;
+    cout << setprecision(2);
+    m1.show(6);
+    cout << m1.det(1) << endl;
     m1.show();
-    iint x(3);
-    m2 = x * m1;
-    m2.show();
-    int a = 3;
-    double d = 2.5;
-    double d2 = a * d;
-    cout << d2;
 
 
     return 0;
