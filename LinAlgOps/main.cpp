@@ -15,14 +15,46 @@ double randDouble(double min, double max) {
     return (max - min) * ((double) rand() / (double) RAND_MAX) + min;
 }
 
+void testDet(int trials);
+
 int main() {
 
+    /* How to INITIALIZE a matrix:
+    double m2[4][4] = {{1, 2, 3, 4},
+                       {3, 1, 2, 5},
+                       {5, 1, 6, 7},
+                       {2, 5, 3, 6}};
+    Matrix<double> m1 (4, 4);
+    m1 = makeMatrix<double, 4, 4>(m2);
 
-    srand(time(NULL));
+    m1.show(); */
+
 
     cout << setprecision(2);
 
-    const int NUM_TRIALS = 1000;
+    double arr[4][4] = {{1, 4, 2, 5},
+                      {4, 2, 6, 4},
+                      {4, 7, 1, 3},
+                      {4, 3, 2, 2}};
+    Matrix<double> m (4, 4);
+    m = makeMatrix<double, 4, 4>(arr);
+
+    m.show();
+    m.gaussElim();
+    m.show(6);
+    cout << (m.get(2, 1) == 0) << endl;
+
+
+
+    return 0;
+}
+
+
+void testDet(int trials) {
+    srand(time(NULL));
+
+    cout << setprecision(2);
+    int NUM_TRIALS = trials;
     int good_count = 0;
     int rough_count = 0;
     int bad_count = 0;
@@ -64,10 +96,6 @@ int main() {
     cout << "Off by one: " << rough_count << endl;
     cout << "Not Matching: " << bad_count << endl;
     cout << "Mean Error: " << error << "%" << endl;
-
-    return 0;
 }
-
-
 
 

@@ -33,6 +33,7 @@ Matrix<T>::Matrix(int M, int N) {
     }
 }
 
+
 //int size(double **a) {
 //    return sizeof(a) / sizeof(*a);
 //}
@@ -232,41 +233,34 @@ Matrix<iint> Matrix<iint>::getH() const {
 }
 
 
-//int fact(int n) {
-//    if (n == 0) return 1;
-//    return n * fact(n - 1);
-//}
-//
-//template<int n>
-//struct permutations {
-//    int P[fact(n)][n + 1] = {};
-//};
-//
-//template<int n>
-//permutations<n> genPermutations() {
-//    permutations<n> perms;
-//    if (n == 1) {
-//        perms.P[0][1] = 1;
-//        return perms;
-//    }
-//    permutations<n - 1> prevPerms = genPermutations<n - 1>();
-//    int prevf = fact(n - 1);
-//    for (int i = 0; i < n; i++) {
-//        for (int x = 0; x < prevf; x++) {
-//            int index = i * prevf + x;
-//            perms.P[index][1] = i + 1;
-//            for (int j = 2; j <= n; j++) {
-//                int temp = prevPerms.P[x][j - 1];
-//                if (temp == 1) {
-//                    perms.P[index][j] = n;
-//                    continue;
-//                }
-//                perms.P[index][j] = temp;
-//            }
-//        }
-//    }
-//    return perms;
-//}
+
+template<class T>
+void Matrix<T>::rowMinus(int i1, int i2, T factor) {
+    for (int j = 1; j <= n; j++) {
+        set(i2, j, get(i2, j) - get(i1, j) * factor);
+    }
+}
+
+template<class T>
+void Matrix<T>::rowSwap(int i1, int i2) {
+    vector<T> temp = mat[i1 - 1];
+    mat[i1 - 1] = mat[i2 - 1];
+    mat[i2 - 1] = temp;
+}
+
+template<class T>
+void Matrix<T>::rowMult(int i, T factor) {
+    for (int j = 1; j <= n; j++) {
+        set(i, j, factor * get(i, j));
+    }
+}
+
+template<class T>
+void Matrix<T>::rowDiv(int i, T factor) {
+    for (int j = 1; j <= n; j++) {
+        set(i, j, get(i, j) / factor);
+    }
+}
 
 
 template<class T>
@@ -276,7 +270,6 @@ T Matrix<T>::det(int algo) const {
         cout << "Not a square matrix, operation invalid, exiting...";
         exit(0);
     }
-    /* TODO : implement determinant function */
     /* 0: Gaussian Elimination (ONLY WORKS WITH DOUBLES/IDOUBLES NOT INTS/IINTS)
      * 1: naive (inefficient) algorithm
      * */
@@ -335,35 +328,68 @@ T Matrix<T>::det(int algo) const {
         }
         return result;
     }
-
 }
 
+/* TODO : Re-implement gaussElim methods and check the -0 issue */
+
 template<class T>
-void Matrix<T>::rowMinus(int i1, int i2, T factor) {
+void Matrix<T>::gaussElim() {
     for (int j = 1; j <= n; j++) {
-        set(i2, j, get(i2, j) - get(i1, j) * factor);
+        for (int i = j; i <= m; i++) {
+            T entry = get(i, j);
+            if (entry != 0) {
+                if (i == j)
+                    break;
+                else if (i > j) {
+                    rowSwap(i, j);
+                    break;
+                }
+            }
+        }
+
+        T factor(get(j, j));
+        rowDiv(j, factor);
+        if (j + 1 <= m) {
+            for (int i = j + 1; i <= m; i++) {
+                rowMinus(j, i, get(i, j));
+            }
+        }
+    }
+}
+
+
+template<class T>
+void Matrix<T>::gaussElim(int col) {
+    for (int j = 1; j <= col; j++) {
+        for (int i = j; i <= m; i++) {
+            T entry = get(i, j);
+            if (entry != 0) {
+                if (i == j)
+                    break;
+                else if (i > j) {
+                    rowSwap(i, j);
+                    break;
+                }
+            }
+        }
+
+        T factor(get(j, j));
+        rowDiv(j, factor);
+        if (j + 1 <= m) {
+            for (int i = j + 1; i <= m; i++) {
+                rowMinus(j, i, get(i, j));
+            }
+        }
     }
 }
 
 template<class T>
-void Matrix<T>::rowSwap(int i1, int i2) {
-    vector<T> temp = mat[i1 - 1];
-    mat[i1 - 1] = mat[i2 - 1];
-    mat[i2 - 1] = temp;
-}
-
-template<class T>
-void Matrix<T>::rowMult(int i, T factor) {
-    for (int j = 1; j <= n; j++) {
-        set(i, j, factor * get(i, j));
+Matrix<T> Matrix<T>::inverse() {
+    if (m != n) {
+        cout << "Matrix is not square, exiting..." << endl;
+        exit(0);
     }
-}
 
-template<class T>
-void Matrix<T>::rowDiv(int i, T factor) {
-    for (int j = 1; j <= n; j++) {
-        set(i, j, get(i, j) / factor);
-    }
 }
 
 template

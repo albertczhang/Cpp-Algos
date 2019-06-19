@@ -25,7 +25,7 @@ public:
 
     T get(int i, int j) const;
 
-    void show(int padding=5);
+    void show(int padding = 5);
 
     vector<T> operator[](int i); // CAVEAT : ONLY FOR ACCESS, NOT ASSIGNMENT
 
@@ -43,13 +43,42 @@ public:
 
     Matrix<T> getH() const;
 
-    T det(int algo=0) const;
+    void rowMinus(int i1, int i2, T factor); // SUBTRACT FACTOR * I1 FROM I2
+
+    void rowSwap(int i1, int i2);
+
+    void rowMult(int i, T factor);
+
+    void rowDiv(int i, T factor);
+
+    T det(int algo = 0) const;
+
+    void gaussElim();
+
+    void gaussElim(int col);
+
+    Matrix<T> inverse();
+
 
 };
 
+template<class T, int M, int N>
+Matrix<T> makeMatrix(T entries[M][N]);
+
+template<class T, int M, int N>
+Matrix<T> makeMatrix(T entries[M][N]) {
+    Matrix<T> result (M, N);
+    for (int i = 1; i <= result.m; i++) {
+        for (int j = 1; j <= result.n; j++) {
+            result.set(i, j, entries[i - 1][j - 1]);
+        }
+    }
+    return result;
+}
+
 template<class T>
 Matrix<T> operator*(T k, Matrix<T> other) {
-    Matrix<T> result (other.m, other.n);
+    Matrix<T> result(other.m, other.n);
     for (int i = 0; i < other.m; i++) {
         for (int j = 0; j < other.n; j++) {
             result.set(i + 1, j + 1, k * other.get(i + 1, j + 1));
@@ -60,7 +89,7 @@ Matrix<T> operator*(T k, Matrix<T> other) {
 
 template<class T>
 Matrix<T> operator/(Matrix<T> other, T k) {
-    Matrix<T> result (other.m, other.n);
+    Matrix<T> result(other.m, other.n);
     for (int i = 0; i < other.m; i++) {
         for (int j = 0; j < other.n; j++) {
             result.set(i + 1, j + 1, other.get(i + 1, j + 1) / k);
