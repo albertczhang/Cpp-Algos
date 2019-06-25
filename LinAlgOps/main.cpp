@@ -32,18 +32,45 @@ int main() {
 
     cout << setprecision(2);
 
-    double arr[4][4] = {{1, 4, 2, 5},
-                      {4, 2, 6, 4},
-                      {4, 7, 1, 3},
-                      {4, 3, 2, 2}};
-    Matrix<double> m (4, 4);
-    m = makeMatrix<double, 4, 4>(arr);
+    double arr[4][8] = {{1, 2, 3, 4, 1, 0, 0, 0},
+                        {3, 1, 2, 5, 0, 1, 0, 0},
+                        {5, 1, 6, 7, 0, 0, 1, 0},
+                        {2, 5, 3, 6, 0, 0, 0, 1}};
+    Matrix<double> m(4, 8);
+    m = makeMatrix<double, 4, 8>(arr);
 
+    Matrix<double> m1(4, 4);
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 1; j <= 4; j++) {
+            m1.set(i, j, m.get(i, j));
+        }
+    }
     m.show();
-    m.gaussElim();
+    m.gaussElim(4);
     m.show(6);
-    cout << (m.get(2, 1) == 0) << endl;
+    Matrix<double> m2(4, 4);
+    for (int i = 1; i <= 4; i++) {
+        for (int j = 5; j <= 8; j++) {
+            m2.set(i, j - 4, m.get(i, j));
+        }
+    }
 
+    m1.show();
+    m2.show();
+    Matrix<double> m3(4, 4);
+
+    m3 = m1 * m2;
+    m3.show(10);
+
+    double arr2[4][4] = {{1, 2, 3, 4},
+                         {3, 1, 2, 5},
+                         {5, 1, 6, 7},
+                         {2, 5, 3, 6}};
+    Matrix<double> mtest(4, 4);
+    mtest = makeMatrix<double, 4, 4>(arr2);
+    Matrix<double> mtestInv(4, 4);
+    mtestInv = mtest.inverse();
+    mtestInv.show();
 
 
     return 0;
@@ -76,8 +103,7 @@ void testDet(int trials) {
             good_count++;
             cout << "Determinants match: " <<
                  d1 << " = " << d2 << endl << endl;
-        }
-        else if (d1 - d2 > -2 && d1 - d2 < 2) {
+        } else if (d1 - d2 > -2 && d1 - d2 < 2) {
             rough_count++;
             error += abs((d1 - d2) / d1 * 100);
             cout << "Determinants are off by 1: " <<

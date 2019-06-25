@@ -45,6 +45,12 @@ public:
 };
 
 template<class T>
+double abs(Complex<T> z) {
+    return sqrt((double)(z.a * z.a + z.b * z.b));
+}
+
+
+template<class T>
 std::ostream &operator<<(std::ostream &os, Complex<T> z) {
 //    if (z.a == 0 && false) {
 //        if (z.b == 1)

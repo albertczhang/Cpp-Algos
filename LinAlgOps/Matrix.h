@@ -25,7 +25,7 @@ public:
 
     T get(int i, int j) const;
 
-    void show(int padding = 5);
+    void show(int padding = 5, double maxError = 1.0e-10);
 
     vector<T> operator[](int i); // CAVEAT : ONLY FOR ACCESS, NOT ASSIGNMENT
 

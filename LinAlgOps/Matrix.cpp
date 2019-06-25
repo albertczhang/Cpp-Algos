@@ -60,32 +60,56 @@ T Matrix<T>::get(int i, int j) const {
 
 
 template<class T>
-void Matrix<T>::show(int padding) {
+void Matrix<T>::show(int padding, double maxError) {
     int w = padding;
     if (m == 1) {
         cout << "[";
         for (int j = 0; j < n - 1; j++) {
-            cout << mat[0][j] << setw(w) << setfill(' ');
+            if (abs(mat[0][j]) < maxError)
+                cout << 0 << setw(w) << setfill(' ');
+            else
+                cout << mat[0][j] << setw(w) << setfill(' ');
         }
-        cout << mat[0][n - 1] << "]\n";
+        if (abs(mat[0][n - 1]) < maxError)
+            cout << 0 << "]\n";
+        else
+            cout << mat[0][n - 1] << "]\n";
     } else {
         cout << "⎡";
         for (int j = 0; j < n - 1; j++) {
-            cout << mat[0][j] << setw(w) << setfill(' ');
+            if (abs(mat[0][j]) < maxError)
+                cout << 0 << setw(w) << setfill(' ');
+            else
+                cout << mat[0][j] << setw(w) << setfill(' ');
         }
-        cout << mat[0][n - 1] << "⎤\n";
+        if (abs(mat[0][n - 1]) < maxError)
+            cout << 0 << "⎤\n";
+        else
+            cout << mat[0][n - 1] << "⎤\n";
         for (int i = 1; i < m - 1; i++) {
             cout << "⎢";
             for (int j = 0; j < n - 1; j++) {
-                cout << mat[i][j] << setw(w) << setfill(' ');
+                if (abs(mat[i][j]) < maxError)
+                    cout << 0 << setw(w) << setfill(' ');
+                else
+                    cout << mat[i][j] << setw(w) << setfill(' ');
             }
-            cout << mat[i][n - 1] << "⎥\n";
+            if (abs(mat[i][n - 1]) < maxError)
+                cout << 0 << "⎥\n";
+            else
+                cout << mat[i][n - 1] << "⎥\n";
         }
         cout << "⎣";
         for (int j = 0; j < n - 1; j++) {
-            cout << mat[m - 1][j] << setw(w) << setfill(' ');
+            if (abs(mat[m - 1][j]) < maxError)
+                cout << 0 << setw(w) << setfill(' ');
+            else
+                cout << mat[m - 1][j] << setw(w) << setfill(' ');
         }
-        cout << mat[m - 1][n - 1] << "⎦\n";
+        if (abs(mat[m - 1][n - 1]) < maxError)
+            cout << 0 << "⎦\n";
+        else
+            cout << mat[m - 1][n - 1] << "⎦\n";
     }
 }
 
@@ -112,7 +136,7 @@ Matrix<T> Matrix<T>::operator+(Matrix<T> other) {
     Matrix<T> result(m, n);
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-            result.set(i + 1, j + 1, mat[i][j] + other.get(i, j));
+            result.set(i + 1, j + 1, mat[i][j] + other.get(i + 1, j + 1));
         }
     }
     return result;
@@ -127,7 +151,7 @@ Matrix<T> Matrix<T>::operator-(Matrix<T> other) {
     Matrix<T> result(m, n);
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < n; j++) {
-            result.set(i + 1, j + 1, mat[i][j] - other.get(i, j));
+            result.set(i + 1, j + 1, mat[i][j] - other.get(i + 1, j + 1));
         }
     }
     return result;
@@ -146,7 +170,7 @@ Matrix<T> Matrix<T>::operator*(Matrix<T> other) {
         for (int j = 0; j < other.n; j++) {
             T dot = 0;
             for (int k = 0; k < n; k++) {
-                dot = dot + mat[i][k] * other.get(k, j);
+                dot = dot + mat[i][k] * other.get(k + 1, j + 1);
             }
             result.set(i + 1, j + 1, dot);
         }
@@ -231,7 +255,6 @@ Matrix<iint> Matrix<iint>::getH() const {
     }
     return H;
 }
-
 
 
 template<class T>
@@ -334,50 +357,94 @@ T Matrix<T>::det(int algo) const {
 
 template<class T>
 void Matrix<T>::gaussElim() {
+    // STEP 1
+    int r = 1;
     for (int j = 1; j <= n; j++) {
-        for (int i = j; i <= m; i++) {
+        bool flag = false; // flag denotes if pivot found in column
+        for (int i = r; i <= m; i++) {
             T entry = get(i, j);
             if (entry != 0) {
-                if (i == j)
+                flag = true;
+                if (i == r) {
                     break;
-                else if (i > j) {
-                    rowSwap(i, j);
+                } else if (i > r) {
+                    rowSwap(i, r);
                     break;
                 }
             }
         }
 
-        T factor(get(j, j));
-        rowDiv(j, factor);
-        if (j + 1 <= m) {
-            for (int i = j + 1; i <= m; i++) {
-                rowMinus(j, i, get(i, j));
+        if (flag) {
+            T factor(get(r, j));
+            rowDiv(r, factor);
+            if (r + 1 <= m) {
+                for (int i = r + 1; i <= m; i++) {
+                    rowMinus(r, i, get(i, j));
+                    // set to 0 here, correcting the -0 error
+                }
+            }
+            r++;
+        }
+    }
+    // STEP 2
+    for (int i = r - 1; i >= 1; i--) {
+        for (int j = 1; j <= n; j++) {
+            T pivot = get(i, j);
+            if (pivot != 0) {
+                if (i == 1)
+                    break;
+                for (int up = i - 1; up >= 1; up--) {
+                    rowMinus(i, up, get(up, j));
+                }
+                break;
             }
         }
     }
 }
 
-
 template<class T>
 void Matrix<T>::gaussElim(int col) {
+    // STEP 1
+    int r = 1;
     for (int j = 1; j <= col; j++) {
-        for (int i = j; i <= m; i++) {
+        bool flag = false; // flag denotes if pivot found in column
+        for (int i = r; i <= m; i++) {
             T entry = get(i, j);
             if (entry != 0) {
-                if (i == j)
+                flag = true;
+                if (i == r) {
                     break;
-                else if (i > j) {
-                    rowSwap(i, j);
+                } else if (i > r) {
+                    rowSwap(i, r);
                     break;
                 }
             }
         }
 
-        T factor(get(j, j));
-        rowDiv(j, factor);
-        if (j + 1 <= m) {
-            for (int i = j + 1; i <= m; i++) {
-                rowMinus(j, i, get(i, j));
+        if (flag) {
+            T factor(get(r, j));
+            rowDiv(r, factor);
+            if (r + 1 <= m) {
+                for (int i = r + 1; i <= m; i++) {
+                    rowMinus(r, i, get(i, j));
+                    // set to 0 here, correcting the -0 error
+                }
+            }
+            r++;
+        }
+    }
+
+    // STEP 2
+    for (int i = r - 1; i >= 1; i--) {
+        for (int j = 1; j <= col; j++) {
+            T pivot = get(i, j);
+            if (pivot != 0) {
+                if (i == 1)
+                    break;
+                for (int up = i - 1; up >= 1; up--) {
+                    rowMinus(i, up, get(up, j));
+                }
+                break;
             }
         }
     }
@@ -389,7 +456,26 @@ Matrix<T> Matrix<T>::inverse() {
         cout << "Matrix is not square, exiting..." << endl;
         exit(0);
     }
-
+    Matrix<T> copier(n, 2 * n);
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+            copier.set(i, j, get(i, j));
+        }
+        copier.set(i, n + i, (T) 1);
+    }
+    copier.gaussElim(n);
+    if (copier.get(n, n) != 1) {
+        cout << "Matrix is not invertible." << endl;
+        Matrix<T> singular(n, n);
+        return singular;
+    }
+    Matrix<T> inv(n, n);
+    for (int i = 1; i <= n; i++) {
+        for (int j = n + 1; j <= 2 * n; j++) {
+            inv.set(i, j - n, copier.get(i, j));
+        }
+    }
+    return inv;
 }
 
 template
