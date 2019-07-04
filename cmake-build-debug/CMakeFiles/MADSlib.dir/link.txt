@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMADSlib.a  CMakeFiles/MADSlib.dir/src/Complex.cpp.o CMakeFiles/MADSlib.dir/src/Matrix.cpp.o
+/usr/bin/ranlib libMADSlib.a
