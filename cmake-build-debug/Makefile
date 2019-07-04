@@ -124,17 +124,17 @@ MADS_Library/fast:
 .PHONY : MADS_Library/fast
 
 #=============================================================================
-# Target rules for targets named MADSlib
+# Target rules for targets named lib
 
 # Build rule for target.
-MADSlib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MADSlib
-.PHONY : MADSlib
+lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lib
+.PHONY : lib
 
 # fast build rule for target.
-MADSlib/fast:
-	$(MAKE) -f CMakeFiles/MADSlib.dir/build.make CMakeFiles/MADSlib.dir/build
-.PHONY : MADSlib/fast
+lib/fast:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/build
+.PHONY : lib/fast
 
 main.o: main.cpp.o
 
@@ -169,7 +169,7 @@ src/Complex.o: src/Complex.cpp.o
 
 # target to build an object file
 src/Complex.cpp.o:
-	$(MAKE) -f CMakeFiles/MADSlib.dir/build.make CMakeFiles/MADSlib.dir/src/Complex.cpp.o
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Complex.cpp.o
 .PHONY : src/Complex.cpp.o
 
 src/Complex.i: src/Complex.cpp.i
@@ -178,7 +178,7 @@ src/Complex.i: src/Complex.cpp.i
 
 # target to preprocess a source file
 src/Complex.cpp.i:
-	$(MAKE) -f CMakeFiles/MADSlib.dir/build.make CMakeFiles/MADSlib.dir/src/Complex.cpp.i
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Complex.cpp.i
 .PHONY : src/Complex.cpp.i
 
 src/Complex.s: src/Complex.cpp.s
@@ -187,7 +187,7 @@ src/Complex.s: src/Complex.cpp.s
 
 # target to generate assembly for a file
 src/Complex.cpp.s:
-	$(MAKE) -f CMakeFiles/MADSlib.dir/build.make CMakeFiles/MADSlib.dir/src/Complex.cpp.s
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Complex.cpp.s
 .PHONY : src/Complex.cpp.s
 
 src/Matrix.o: src/Matrix.cpp.o
@@ -196,7 +196,7 @@ src/Matrix.o: src/Matrix.cpp.o
 
 # target to build an object file
 src/Matrix.cpp.o:
-	$(MAKE) -f CMakeFiles/MADSlib.dir/build.make CMakeFiles/MADSlib.dir/src/Matrix.cpp.o
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Matrix.cpp.o
 .PHONY : src/Matrix.cpp.o
 
 src/Matrix.i: src/Matrix.cpp.i
@@ -205,7 +205,7 @@ src/Matrix.i: src/Matrix.cpp.i
 
 # target to preprocess a source file
 src/Matrix.cpp.i:
-	$(MAKE) -f CMakeFiles/MADSlib.dir/build.make CMakeFiles/MADSlib.dir/src/Matrix.cpp.i
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Matrix.cpp.i
 .PHONY : src/Matrix.cpp.i
 
 src/Matrix.s: src/Matrix.cpp.s
@@ -214,7 +214,7 @@ src/Matrix.s: src/Matrix.cpp.s
 
 # target to generate assembly for a file
 src/Matrix.cpp.s:
-	$(MAKE) -f CMakeFiles/MADSlib.dir/build.make CMakeFiles/MADSlib.dir/src/Matrix.cpp.s
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Matrix.cpp.s
 .PHONY : src/Matrix.cpp.s
 
 # Help Target
@@ -226,7 +226,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MADS_Library"
-	@echo "... MADSlib"
+	@echo "... lib"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

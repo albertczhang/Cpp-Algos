@@ -79,7 +79,7 @@ MADS_Library_EXTERNAL_OBJECTS =
 
 MADS_Library: CMakeFiles/MADS_Library.dir/main.cpp.o
 MADS_Library: CMakeFiles/MADS_Library.dir/build.make
-MADS_Library: libMADSlib.a
+MADS_Library: liblib.a
 MADS_Library: CMakeFiles/MADS_Library.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/albertczhang/Desktop/Projects/MADS-Library/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MADS_Library"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MADS_Library.dir/link.txt --verbose=$(VERBOSE)

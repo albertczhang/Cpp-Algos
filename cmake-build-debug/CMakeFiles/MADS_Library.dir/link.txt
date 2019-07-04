@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/MADS_Library.dir/main.cpp.o  -o MADS_Library libMADSlib.a 
+/usr/bin/c++  -g   CMakeFiles/MADS_Library.dir/main.cpp.o  -o MADS_Library liblib.a 

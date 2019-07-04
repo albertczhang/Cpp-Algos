@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Complex.h
+math.h
+-
+ostream
+-
+iomanip
+-
+
+../include/Matrix.h
+Complex.h
+../include/Complex.h
+vector
+-
+
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Complex.cpp
+Complex.h
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Complex.h
+ostream
+-
+math.h
+-
+
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Matrix.cpp
+iostream
+-
+iomanip
+-
+Matrix.h
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Matrix.h
+Complex.h
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Complex.h
+
