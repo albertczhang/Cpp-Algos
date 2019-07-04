@@ -1,67 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="MADS_Library" targetName="MADS_Library" />
+      <config projectName="MADS_Library" targetName="lib" />
+    </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a5d7f62-6ec7-4893-945a-26d93af43376" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sorts/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorts/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorts/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/Complex.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/Complex.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/Matrix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/Matrix.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MADS-Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MADS-Library.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/.idea/LinAlgOps.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/Matrix.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/Matrix.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/3.14.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/3.14.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/3.14.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/3.14.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/3.14.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/CXX.includecache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/Complex.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/Matrix.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/Matrix.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/Matrix.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/LinAlgOps.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/LinAlgOps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/LinAlgOps.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/LinAlgOps.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/LinAlgOps.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinAlgOps/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/.idea/Sorts.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/3.14.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/3.14.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/3.14.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/3.14.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/3.14.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/Makefile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/Sorts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/Sorts.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/Sorts.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorts/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sorts/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/Sorts.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorts/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/MADS_Library" beforeDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,12 +117,94 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/Complex.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Complex.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1446">
+              <caret line="88" selection-start-line="88" selection-end-line="95" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/Matrix.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Matrix.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding>
+                <element signature="e#45#64#0" expanded="true" />
+                <element signature="e#5373#5375#0" expanded="true" />
+                <element signature="e#5728#5730#0" expanded="true" />
+                <element signature="e#6081#6083#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/include/Complex.h" />
+        <option value="$PROJECT_DIR$/src/Complex.cpp" />
+        <option value="$PROJECT_DIR$/src/Matrix.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-lib" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="320" />
-    <option name="y" value="71" />
+    <option name="x" value="168" />
+    <option name="y" value="645" />
     <option name="width" value="1870" />
     <option name="height" value="1295" />
   </component>
@@ -85,22 +213,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="MADS-Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MADS_Library" type="b2602c69:ProjectViewProjectNode" />
               <item name="MADS-Library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MADS_Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MADS-Library" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MADS_Library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MADS-Library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="terminal" />
@@ -117,6 +259,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="CMake Application.MADS_Library">
+    <configuration name="MADS_Library" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MADS_Library" TARGET_NAME="MADS_Library" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="MADS_Library" RUN_TARGET_NAME="MADS_Library">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MADS_Library" TARGET_NAME="lib" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.lib" />
+      <item itemvalue="CMake Application.MADS_Library" />
+    </list>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -128,18 +286,20 @@
       <option name="presentableId" value="Default" />
       <updated>1562223094690</updated>
       <workItem from="1562223095840" duration="37000" />
+      <workItem from="1562223320860" duration="2076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37000" />
+    <option name="totallyTimeSpent" value="2113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="58" width="2560" height="1382" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1087308" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.12691997" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
@@ -150,16 +310,69 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="CMake" order="10" />
+      <window_info anchor="bottom" id="CMake" order="10" weight="0.32920793" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Messages" order="4" weight="0.32983023" />
+      <window_info anchor="right" id="Messages" order="4" weight="0.40016168" />
       <window_info active="true" anchor="right" id="Run" order="5" visible="true" weight="0.32902184" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/include/Matrix.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Matrix.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="e#45#64#0" expanded="true" />
+            <element signature="e#5373#5375#0" expanded="true" />
+            <element signature="e#5728#5730#0" expanded="true" />
+            <element signature="e#6081#6083#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Complex.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Complex.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1446">
+          <caret line="88" selection-start-line="88" selection-end-line="95" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

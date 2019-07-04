@@ -1,3 +1,0 @@
-/home/albertczhang/Desktop/Projects/Cpp-Algos/Sorts/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/albertczhang/Desktop/Projects/Cpp-Algos/Sorts/cmake-build-debug/CMakeFiles/Sorts.dir
-/home/albertczhang/Desktop/Projects/Cpp-Algos/Sorts/cmake-build-debug/CMakeFiles/edit_cache.dir
