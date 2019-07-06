@@ -12,9 +12,11 @@ using namespace std;
 
 class Graph {
 protected:
-    vector<vector<int>> graph;
-    int V;
+    vector<vector<double>> graph;
+    int w;
 public:
+    int V;
+
     virtual void connect(int i, int j) = 0;
 
     virtual void disconnect(int i, int j) = 0;
@@ -31,12 +33,47 @@ public:
 
     virtual void show() = 0;
 
+    void setw(int w) {
+        (*this).w = w;
+    };
+
 };
 
 
 class AdjMatrix : public Graph {
 public:
-    AdjMatrix(int V);
+    AdjMatrix();
+
+    explicit AdjMatrix(int V);
+
+    void connect(int i, int j) override;
+
+    void connect(int i, int j, double w);
+
+    void disconnect(int i, int j) override;
+
+    bool isConnected(int i, int j) override;
+
+    vector<int> neighbors(int i) override;
+
+    void direct(int i, int j) override;
+
+    void direct(int i, int j, double w);
+
+    bool isDirected(int i, int j) override;
+
+    double weight(int i, int j);
+
+    void addNode() override;
+
+    void show() override;
+};
+
+class AdjList : public Graph {
+public:
+    AdjList();
+
+    explicit AdjList(int V);
 
     void connect(int i, int j) override;
 
@@ -53,25 +90,6 @@ public:
     void addNode() override;
 
     void show() override;
-};
-
-class AdjList : public Graph {
-public:
-    AdjList(int V);
-
-    void connect(int i, int j);
-
-    void disconnect(int i, int j);
-
-    bool isConnected(int i, int j);
-
-    vector<int> neighbors(int i);
-
-    void direct(int i, int j);
-
-    bool isDirected(int i, int j);
-
-    void addNode();
 };
 
 /*class EdgeList : public Graph {

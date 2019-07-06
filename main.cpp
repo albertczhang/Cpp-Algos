@@ -1,5 +1,6 @@
 #include <iostream>
 #include <math.h>
+#include <cmath>
 #include <iomanip>
 #include <stdlib.h>
 #include <time.h>
@@ -33,18 +34,18 @@ int main() {
 
     cout << setprecision(2);
 
-    AdjMatrix g(4);
-    g.connect(1, 2);
+    AdjMatrix g(5);
+    g.connect(1, 2, 3.2);
+    g.disconnect(2, 2);
+    g.connect(2, 3);
+    g.direct(3, 4);
+    g.connect(4, 2);
     g.show();
-    g.disconnect(2, 1);
-    g.show();
-    g.addNode();
-    g.show();
-    g.connect(4, 1);
-    g.direct(2, 3);
-    g.show();
-    g.disconnect(3, 2);
-    g.show();
+    cout << g.isConnected(3, 4) << endl;
+    cout << g.isConnected(2, 1) << endl;
+    cout << g.weight(2, 1) << endl;
+
+
 
     return 0;
 }
