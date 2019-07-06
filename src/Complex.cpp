@@ -1,5 +1,5 @@
 //
-// Template Implementations for Complex int and Complex Double
+// Templated Implementations for Complex int and Complex Double
 //
 
 

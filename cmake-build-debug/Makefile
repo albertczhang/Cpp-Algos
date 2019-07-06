@@ -190,6 +190,33 @@ src/Complex.cpp.s:
 	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Complex.cpp.s
 .PHONY : src/Complex.cpp.s
 
+src/Graph.o: src/Graph.cpp.o
+
+.PHONY : src/Graph.o
+
+# target to build an object file
+src/Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Graph.cpp.o
+.PHONY : src/Graph.cpp.o
+
+src/Graph.i: src/Graph.cpp.i
+
+.PHONY : src/Graph.i
+
+# target to preprocess a source file
+src/Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Graph.cpp.i
+.PHONY : src/Graph.cpp.i
+
+src/Graph.s: src/Graph.cpp.s
+
+.PHONY : src/Graph.s
+
+# target to generate assembly for a file
+src/Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Graph.cpp.s
+.PHONY : src/Graph.cpp.s
+
 src/Matrix.o: src/Matrix.cpp.o
 
 .PHONY : src/Matrix.o
@@ -233,6 +260,9 @@ help:
 	@echo "... src/Complex.o"
 	@echo "... src/Complex.i"
 	@echo "... src/Complex.s"
+	@echo "... src/Graph.o"
+	@echo "... src/Graph.i"
+	@echo "... src/Graph.s"
 	@echo "... src/Matrix.o"
 	@echo "... src/Matrix.i"
 	@echo "... src/Matrix.s"

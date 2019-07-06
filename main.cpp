@@ -1,9 +1,11 @@
 #include <iostream>
-#include "Matrix.h"
 #include <math.h>
 #include <iomanip>
 #include <stdlib.h>
 #include <time.h>
+
+#include "Matrix.h"
+#include "Graph.h"
 
 using namespace std;
 
@@ -29,9 +31,25 @@ int main() {
 
     m1.show(); */
 
-
     cout << setprecision(2);
 
+    AdjMatrix g(4);
+    g.connect(1, 2);
+    g.show();
+    g.disconnect(2, 1);
+    g.show();
+    g.addNode();
+    g.show();
+    g.connect(4, 1);
+    g.direct(2, 3);
+    g.show();
+    g.disconnect(3, 2);
+    g.show();
+
+    return 0;
+}
+
+void testInv() {
     double arr[4][8] = {{1, 2, 3, 4, 1, 0, 0, 0},
                         {3, 1, 2, 5, 0, 1, 0, 0},
                         {5, 1, 6, 7, 0, 0, 1, 0},
@@ -71,11 +89,7 @@ int main() {
     Matrix<double> mtestInv(4, 4);
     mtestInv = mtest.inverse();
     mtestInv.show();
-
-
-    return 0;
 }
-
 
 void testDet(int trials) {
     srand(time(NULL));

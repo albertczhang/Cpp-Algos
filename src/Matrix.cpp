@@ -351,6 +351,9 @@ T Matrix<T>::det(int algo) const {
             result = result + factor * get(1, j) * minor.det(1);
         }
         return result;
+    } else {
+        cout << "invalid, exiting... " << endl;
+        exit(0);
     }
 }
 

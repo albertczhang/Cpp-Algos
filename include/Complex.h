@@ -2,8 +2,8 @@
 // Template Declarations for Complex int and Complex Double
 //
 
-#ifndef LINALGOPS_COMPLEX_H
-#define LINALGOPS_COMPLEX_H
+#ifndef MADS_LIBRARY_COMPLEX_H
+#define MADS_LIBRARY_COMPLEX_H
 
 #include <math.h>
 #include <ostream>
@@ -84,4 +84,4 @@ typedef Complex<double> idouble;
 typedef Complex<float> ifloat;
 
 
-#endif //LINALGOPS_COMPLEX_H
+#endif //MADS_LIBRARY_COMPLEX_H

@@ -10,7 +10,8 @@ target_link_libraries(MADS_Library lib)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 add_library(lib STATIC
         src/Complex.cpp
-        src/Matrix.cpp)
+        src/Matrix.cpp
+        src/Graph.cpp)
 #install(TARGETS MADS_Library DESTINATION lib)
 #install(FILES Complex.h Matrix.h DESTINATION include)
 

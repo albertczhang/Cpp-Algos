@@ -14,27 +14,21 @@ ostream
 iomanip
 -
 
+../include/Graph.h
+vector
+-
+Matrix.h
+../include/Matrix.h
+
 ../include/Matrix.h
 Complex.h
 ../include/Complex.h
 vector
 -
 
-/home/albertczhang/Desktop/Projects/MADS-Library/src/Complex.cpp
-Complex.h
-/home/albertczhang/Desktop/Projects/MADS-Library/src/Complex.h
-ostream
--
-math.h
--
-
-/home/albertczhang/Desktop/Projects/MADS-Library/src/Matrix.cpp
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Graph.cpp
 iostream
 -
-iomanip
--
-Matrix.h
-/home/albertczhang/Desktop/Projects/MADS-Library/src/Matrix.h
-Complex.h
-/home/albertczhang/Desktop/Projects/MADS-Library/src/Complex.h
+Graph.h
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Graph.h
 

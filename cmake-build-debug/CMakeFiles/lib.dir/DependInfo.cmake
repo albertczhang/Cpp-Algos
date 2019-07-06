@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/albertczhang/Desktop/Projects/MADS-Library/src/Complex.cpp" "/home/albertczhang/Desktop/Projects/MADS-Library/cmake-build-debug/CMakeFiles/lib.dir/src/Complex.cpp.o"
+  "/home/albertczhang/Desktop/Projects/MADS-Library/src/Graph.cpp" "/home/albertczhang/Desktop/Projects/MADS-Library/cmake-build-debug/CMakeFiles/lib.dir/src/Graph.cpp.o"
   "/home/albertczhang/Desktop/Projects/MADS-Library/src/Matrix.cpp" "/home/albertczhang/Desktop/Projects/MADS-Library/cmake-build-debug/CMakeFiles/lib.dir/src/Matrix.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

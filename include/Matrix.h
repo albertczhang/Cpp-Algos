@@ -2,8 +2,8 @@
 // Declarations for Matrix Class
 //
 
-#ifndef LINALGOPS_MATRIX_H
-#define LINALGOPS_MATRIX_H
+#ifndef MADS_LIBRARY_MATRIX_H
+#define MADS_LIBRARY_MATRIX_H
 
 #include "Complex.h"
 #include <vector>
@@ -159,4 +159,4 @@ Matrix<T> operator/(Matrix<T> other, T k) {
 //    return result;
 //}
 
-#endif //LINALGOPS_MATRIX_H
+#endif //MADS_LIBRARY_MATRIX_H

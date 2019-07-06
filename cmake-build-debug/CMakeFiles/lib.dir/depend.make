@@ -4,6 +4,11 @@
 CMakeFiles/lib.dir/src/Complex.cpp.o: ../include/Complex.h
 CMakeFiles/lib.dir/src/Complex.cpp.o: ../src/Complex.cpp
 
+CMakeFiles/lib.dir/src/Graph.cpp.o: ../include/Complex.h
+CMakeFiles/lib.dir/src/Graph.cpp.o: ../include/Graph.h
+CMakeFiles/lib.dir/src/Graph.cpp.o: ../include/Matrix.h
+CMakeFiles/lib.dir/src/Graph.cpp.o: ../src/Graph.cpp
+
 CMakeFiles/lib.dir/src/Matrix.cpp.o: ../include/Complex.h
 CMakeFiles/lib.dir/src/Matrix.cpp.o: ../include/Matrix.h
 CMakeFiles/lib.dir/src/Matrix.cpp.o: ../src/Matrix.cpp
