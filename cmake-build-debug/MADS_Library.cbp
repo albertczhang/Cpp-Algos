@@ -142,6 +142,9 @@
 		<Unit filename="/home/albertczhang/Desktop/Projects/MADS-Library/src/Matrix.cpp">
 			<Option target="lib"/>
 		</Unit>
+		<Unit filename="/home/albertczhang/Desktop/Projects/MADS-Library/src/Polynomial.cpp">
+			<Option target="lib"/>
+		</Unit>
 		<Unit filename="/home/albertczhang/Desktop/Projects/MADS-Library/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

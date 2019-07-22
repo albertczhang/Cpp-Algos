@@ -13,3 +13,8 @@ CMakeFiles/lib.dir/src/Matrix.cpp.o: ../include/Complex.h
 CMakeFiles/lib.dir/src/Matrix.cpp.o: ../include/Matrix.h
 CMakeFiles/lib.dir/src/Matrix.cpp.o: ../src/Matrix.cpp
 
+CMakeFiles/lib.dir/src/Polynomial.cpp.o: ../include/Complex.h
+CMakeFiles/lib.dir/src/Polynomial.cpp.o: ../include/Matrix.h
+CMakeFiles/lib.dir/src/Polynomial.cpp.o: ../include/Polynomial.h
+CMakeFiles/lib.dir/src/Polynomial.cpp.o: ../src/Polynomial.cpp
+

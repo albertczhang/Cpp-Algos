@@ -14,21 +14,21 @@ ostream
 iomanip
 -
 
-../include/Graph.h
-vector
--
-Matrix.h
-../include/Matrix.h
-
 ../include/Matrix.h
 Complex.h
 ../include/Complex.h
 vector
 -
 
-/home/albertczhang/Desktop/Projects/MADS-Library/src/Graph.cpp
+../include/Polynomial.h
+vector
+-
+
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Polynomial.cpp
 iostream
 -
-Graph.h
-/home/albertczhang/Desktop/Projects/MADS-Library/src/Graph.h
+Polynomial.h
+-
+Matrix.h
+-
 

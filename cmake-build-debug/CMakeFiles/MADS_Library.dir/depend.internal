@@ -5,4 +5,5 @@ CMakeFiles/MADS_Library.dir/main.cpp.o
  ../include/Complex.h
  ../include/Graph.h
  ../include/Matrix.h
+ ../include/Polynomial.h
  /home/albertczhang/Desktop/Projects/MADS-Library/main.cpp

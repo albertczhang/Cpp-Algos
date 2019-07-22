@@ -492,10 +492,10 @@ template
 class Matrix<double>;
 
 template
-class Matrix<Complex<int>>;
+class Matrix<iint>;
 
 template
-class Matrix<Complex<float>>;
+class Matrix<ifloat>;
 
 template
-class Matrix<Complex<double>>;
+class Matrix<idouble>;

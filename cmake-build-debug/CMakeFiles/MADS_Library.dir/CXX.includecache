@@ -26,6 +26,10 @@ Complex.h
 vector
 -
 
+../include/Polynomial.h
+vector
+-
+
 /home/albertczhang/Desktop/Projects/MADS-Library/main.cpp
 iostream
 -
@@ -43,4 +47,6 @@ Matrix.h
 /home/albertczhang/Desktop/Projects/MADS-Library/Matrix.h
 Graph.h
 /home/albertczhang/Desktop/Projects/MADS-Library/Graph.h
+Polynomial.h
+/home/albertczhang/Desktop/Projects/MADS-Library/Polynomial.h
 

@@ -1,2 +1,2 @@
-/usr/bin/ar qc liblib.a  CMakeFiles/lib.dir/src/Complex.cpp.o CMakeFiles/lib.dir/src/Matrix.cpp.o CMakeFiles/lib.dir/src/Graph.cpp.o
+/usr/bin/ar qc liblib.a  CMakeFiles/lib.dir/src/Complex.cpp.o CMakeFiles/lib.dir/src/Matrix.cpp.o CMakeFiles/lib.dir/src/Graph.cpp.o CMakeFiles/lib.dir/src/Polynomial.cpp.o
 /usr/bin/ranlib liblib.a

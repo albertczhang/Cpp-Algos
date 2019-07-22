@@ -244,6 +244,33 @@ src/Matrix.cpp.s:
 	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Matrix.cpp.s
 .PHONY : src/Matrix.cpp.s
 
+src/Polynomial.o: src/Polynomial.cpp.o
+
+.PHONY : src/Polynomial.o
+
+# target to build an object file
+src/Polynomial.cpp.o:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Polynomial.cpp.o
+.PHONY : src/Polynomial.cpp.o
+
+src/Polynomial.i: src/Polynomial.cpp.i
+
+.PHONY : src/Polynomial.i
+
+# target to preprocess a source file
+src/Polynomial.cpp.i:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Polynomial.cpp.i
+.PHONY : src/Polynomial.cpp.i
+
+src/Polynomial.s: src/Polynomial.cpp.s
+
+.PHONY : src/Polynomial.s
+
+# target to generate assembly for a file
+src/Polynomial.cpp.s:
+	$(MAKE) -f CMakeFiles/lib.dir/build.make CMakeFiles/lib.dir/src/Polynomial.cpp.s
+.PHONY : src/Polynomial.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -266,6 +293,9 @@ help:
 	@echo "... src/Matrix.o"
 	@echo "... src/Matrix.i"
 	@echo "... src/Matrix.s"
+	@echo "... src/Polynomial.o"
+	@echo "... src/Polynomial.i"
+	@echo "... src/Polynomial.s"
 .PHONY : help
 
 

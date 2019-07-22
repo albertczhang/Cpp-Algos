@@ -13,3 +13,8 @@ CMakeFiles/lib.dir/src/Matrix.cpp.o
  ../include/Complex.h
  ../include/Matrix.h
  /home/albertczhang/Desktop/Projects/MADS-Library/src/Matrix.cpp
+CMakeFiles/lib.dir/src/Polynomial.cpp.o
+ ../include/Complex.h
+ ../include/Matrix.h
+ ../include/Polynomial.h
+ /home/albertczhang/Desktop/Projects/MADS-Library/src/Polynomial.cpp

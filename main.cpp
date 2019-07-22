@@ -7,6 +7,7 @@
 
 #include "Matrix.h"
 #include "Graph.h"
+#include "Polynomial.h"
 
 using namespace std;
 
@@ -32,8 +33,24 @@ int main() {
 
     m1.show(); */
 
-    cout << setprecision(2);
+//    cout << setprecision(2);
 
+
+    vector<idouble> cc = {idouble(1, 0), idouble(1, 0), idouble(-1, 0), idouble(0), idouble(-9, 4)};
+    Polynomial<idouble> p2 (cc);
+    p2.show();
+    cout << endl;
+
+    vector<int> coeffs = {0, 3, 2, -4, 5, 6, -7, 0, 1, 1, 99, -126, 22};
+    Polynomial<int> p (coeffs);
+
+    p.show();
+
+
+    return 0;
+}
+
+void testGraphBasic() {
     AdjMatrix g(5);
     g.connect(1, 2, 3.2);
     g.disconnect(2, 2);
@@ -44,10 +61,6 @@ int main() {
     cout << g.isConnected(3, 4) << endl;
     cout << g.isConnected(2, 1) << endl;
     cout << g.weight(2, 1) << endl;
-
-
-
-    return 0;
 }
 
 void testInv() {
