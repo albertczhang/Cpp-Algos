@@ -49,6 +49,14 @@ double abs(Complex<T> z) {
     return sqrt((double)(z.a * z.a + z.b * z.b));
 }
 
+template <class T>
+Complex<T> pow(Complex<T> z, int exp) {
+    if (exp == 0)
+        return 1;
+    else {
+        return z * pow(z, exp - 1);
+    }
+}
 
 template<class T>
 std::ostream &operator<<(std::ostream &os, Complex<T> z) {

@@ -62,6 +62,13 @@ public:
 
 };
 
+template<class T>
+std::ostream &operator<<(std::ostream &os, Matrix<T> mat) {
+    mat.show();
+    return os;
+}
+
+
 template<class T, int M, int N>
 Matrix<T> makeMatrix(T entries[M][N]);
 

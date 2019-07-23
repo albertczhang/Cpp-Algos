@@ -21,6 +21,11 @@ double randDouble(double min, double max) {
 
 void testDet(int trials);
 
+
+double f1(double x) {
+    return -1 * pow(x, 4) + 3 * pow(x, 3) - 2 * pow(x, 2) + 5;
+}
+
 int main() {
 
     /* How to INITIALIZE a matrix:
@@ -36,19 +41,47 @@ int main() {
 //    cout << setprecision(2);
 
 
-    vector<idouble> cc = {idouble(1, 0), idouble(1, 0), idouble(-1, 0), idouble(0), idouble(-9, 4)};
-    Polynomial<idouble> p2 (cc);
+    Polynomial<double> L;
+    vector<double> points = {-1, 0, 1, 2, 3};
+    L = L_interpolate(f1, points);
+    cout << L << endl;
+
+
+    vector<double> coeffs = {1, -1, 1};
+    Polynomial<double> p(coeffs);
+    p.show();
+    cout << endl;
+
+
+    vector<double> coeffs2 = {1, 1, 1};
+    Polynomial<double> p2(coeffs2);
     p2.show();
     cout << endl;
 
-    vector<int> coeffs = {0, 3, 2, -4, 5, 6, -7, 0, 1, 1, 99, -126, 22};
-    Polynomial<int> p (coeffs);
+    Polynomial<double> psum;
+    psum = p * p2;
+    cout << psum.coeffs[4]<< endl;
 
-    p.show();
+    psum.show();
+    cout << endl;
+
+//    vector<idouble> cc = {idouble(-1, 0), idouble(1, 0), idouble(-1, 0)};
+//    Polynomial<idouble> p3(cc, 'y');
+//    p3.show();
+//
+//    idouble w3(-0.5, pow(3, 0.5)/2);
+//    cout << endl << p3.eval(w3) << endl;
+
+
+
+
+
 
 
     return 0;
 }
+
+
 
 void testGraphBasic() {
     AdjMatrix g(5);

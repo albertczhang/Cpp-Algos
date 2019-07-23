@@ -357,7 +357,6 @@ T Matrix<T>::det(int algo) const {
     }
 }
 
-/* TODO : Re-implement gaussElim methods and check the -0 issue */
 
 template<class T>
 void Matrix<T>::gaussElim() {
