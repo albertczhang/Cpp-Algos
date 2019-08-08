@@ -14,6 +14,12 @@ ostream
 iomanip
 -
 
+../include/Graph.h
+vector
+-
+Matrix.h
+../include/Matrix.h
+
 ../include/Matrix.h
 Complex.h
 ../include/Complex.h
@@ -23,6 +29,30 @@ vector
 ../include/Polynomial.h
 vector
 -
+
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Complex.cpp
+Complex.h
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Complex.h
+ostream
+-
+math.h
+-
+
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Graph.cpp
+iostream
+-
+Graph.h
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Graph.h
+
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Matrix.cpp
+iostream
+-
+iomanip
+-
+Matrix.h
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Matrix.h
+Complex.h
+/home/albertczhang/Desktop/Projects/MADS-Library/src/Complex.h
 
 /home/albertczhang/Desktop/Projects/MADS-Library/src/Polynomial.cpp
 iostream
